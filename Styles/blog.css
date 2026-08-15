@@ -1,0 +1,16 @@
+aside{
+            background-color: azure;
+            float: left;
+            width: 20%;
+        }
+main{
+    
+            float: right;
+            width: 80%;
+        }
+footer{
+            clear: both;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+

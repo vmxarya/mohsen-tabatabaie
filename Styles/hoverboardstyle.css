@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+.continer{
+    display: flex; 
+    max-width: 400px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.boxes{
+    background-color: rgb(49, 51, 54);
+    box-shadow: 0 0 2px;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 2s ease;
+        
+}
+.boxes:hover{
+    transition-duration: 0s;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="../Styles/menu.css">
+    <link rel="stylesheet" href="../Styles/layout.css">
+    <link rel="stylesheet" href="../w3.css">
+    <style>
+        #clock{
+            float: right;
+            padding-top: 10px;
+        }
+    </style>
+    <script>
+        // Apply theme immediately before page renders to prevent flash
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    
+    <nav id="main-nav"></nav>
+    
+    <div class="container-wrapper">
+        <!-- Left Sidebar -->
+        <div class="sidebar-left">
+            <h3>Quick Links</h3>
+            
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            
+            <div class="w3-container w3-light-blue">
+                <h5><b>AI</b></h5>
+                <p><a href="https://chatgpt.com">Chat GPT</a></p>
+                <p><a href="https://gemini.google.com">Gemini Pro</a></p>
+                <p><a href="https://grok.ai">Grok</a></p>
+            </div> 
+
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="sidebar-right">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#ai">AI Tools</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#freelance">Freelance</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <script src="../Scripts/nav.js"></script>
+    <script src="Scripts/darkmode.js"></script>
+    <script>
+        setInterval(function(){
+            var clock = document.getElementById('clock');
+            if (clock) {
+                var d = new Date();
+                clock.innerText = d.toLocaleTimeString();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

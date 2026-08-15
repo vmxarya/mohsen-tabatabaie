@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../Styles/hoverboardstyle.css">
+    <link rel="stylesheet" href="../Styles/menu.css">
+    <link rel="stylesheet" href="../Styles/layout.css">
+    <link rel="stylesheet" href="../Styles/w3.css">
+    
+    <script>
+        // Apply theme immediately before page renders to prevent flash
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+    <style>
+        main{
+            padding: 20px;
+        }
+        #calc{
+            text-align: center;
+        }
+        #hover{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav id="main-nav"></nav>
+    <header>
+       
+    </header>
+    
+    <div class="container-wrapper">
+        <!-- Left Sidebar -->
+        <div class="sidebar-left">
+            <h3>Navigation</h3>
+            <ul>
+               
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content content">
+            <div id="hover">
+                <div class="responsive" >
+                    <div class="continer" id="continer"></div>
+                </div>
+            </div>
+            <div class="responsive" id="calc">
+                <h3 id="result"></h3>
+                <button id="resultbutton">Calculator</button>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <div class="sidebar-right">
+            <h3>Projects</h3>
+            <ul>
+                <li><a href="#hoverboard">Hoverboard</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#projects">More Projects</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<script src="../Scripts/nav.js"></script>
+<script src="../Scripts/darkmode.js"></script>
+<script src="../Scripts/hoverboard.js"></script>
+<script src="../Scripts/calculator.js"></script>
+
+</body>
+</html>

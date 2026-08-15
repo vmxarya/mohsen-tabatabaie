@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutMe</title>
+    <link rel="stylesheet" href="../Styles/menu.css">
+    <link rel="stylesheet" href="../Styles/layout.css">
+    <link rel="stylesheet" href="../w3.css">
+    <script>
+        // Apply theme immediately before page renders to prevent flash
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body onload="init()">
+    <header>
+    
+    </header>
+
+    <nav id="main-nav"></nav>
+
+    <div class="container-wrapper">
+        <!-- Left Sidebar -->
+        <div class="sidebar-left">
+            <h3>Navigation</h3>
+            <ul>
+               
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="w3-container w3-gray">
+                <img src="../assets/me.jpg" alt="mohsen" width="10%">
+                <h2><bold>Hi</bold>, im <i>Mohsen</i></h2>
+                <h3>My Hobbies are : Programming, Researching, Studying, Swimming, 
+                Playing Video Games, Watching Movies, Outdoors, 
+                Learning New Things, Body Exercising, Playing Music</h3>
+                <p>an aspiring human being</p>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <div class="sidebar-right">
+            <h3>About Me</h3>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#interests">Interests</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../Scripts/nav.js"></script>
+    <script src="../Scripts/darkmode.js"></script>
+</body>
+</html>
