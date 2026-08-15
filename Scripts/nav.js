@@ -2,7 +2,7 @@ const menuConfig = [
   { label: 'Home', href: 'index.html' },
   {
     label: 'AI Tools',
-    href: './Pages/AI.html',
+    href: './Pages/ai.html',
     
   },
   {
